@@ -9,11 +9,6 @@ import crausal5 from "../resource/crausal5.jpg";
 import crausal6 from "../resource/crausal6.jpg";
 import crausal7 from "../resource/crausal7.jpg";
 import crausal8 from "../resource/crausal8.jpg";
-import crausal10 from "../resource/crausal10.png";
-import crausal11 from "../resource/crausal11.png";
-import crausal12 from "../resource/crausal12.png";
-import crausal13 from "../resource/crausal13.png";
-import crausal14 from "../resource/crausal14.png";
 import crausal15 from "../resource/crausal15.png";
 import crausal16 from "../resource/crausal16.jpg";
 import crausal17 from "../resource/crausal17.png";
@@ -26,11 +21,6 @@ import sdg5 from "../resource/sdg5.png";
 import sdg6 from "../resource/sdg6.png";
 import sdg7 from "../resource/sdg7.png";
 import sdg8 from "../resource/sdg8.png";
-
-import combo from "../resource/combo.jpg";
-import kgvcombo from "../resource/kgvcombo.jpg";
-import kgvwherehouse from "../resource/kgvwherehouse.jpg";
-import kgvwherehouse1 from "../resource/kgvwherehouse1.png";
 import kgvwherehouse2 from "../resource/kgvwherehouse2.jpeg";
 import zamatoboy from "../resource/zamatoboy.mp4";
 import zamatoboy2 from "../resource/zamatoboy2.mp4";
@@ -50,10 +40,6 @@ import news1 from "../resource/news1.jpg";
 import news2 from "../resource/news2.jpg";
 import { Link } from "react-router-dom";
 import { BusinessBook } from "../components/BusinessBook";
-import bike5 from '../resource/bike_main.png';
-import bike1 from '../resource/bike1.jpg';
-import bike2 from '../resource/bike2.jpg';
-import bike4 from '../resource/bike4.jpg';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
@@ -141,7 +127,7 @@ export const Home = () => {
 
 
 <div className="w-full h-screen flex flex-col justify-center relative items-center z-10 ">
-  <img src={wave} className="w-full absolute h-full top-0 -z-10 opacity-60" />
+<img src={wave} alt="Background wave" className="w-full absolute h-full top-0 -z-10 opacity-60" />
   
   <div className="hover:scale-110 transition-all duration-500 box-content flex flex-col justify-center rounded-xl shadow-2xl h-[50%] p-6 w-[80%] min-w-[320px] max-w-[600px] items-center gap-y-6 bg-white border-4 border-yellow-200"
     style={{ boxShadow: '0 10px 20px rgba(0, 0, 0, 0.9)' }}
@@ -186,21 +172,6 @@ export const Home = () => {
         </div>
       </div>
 
-{/* 
-      <div className="flex flex-col md:flex-row items-center">
-   
-        <div className="md:w-1/2 p-4 flex justify-center">
-          <img src={kgvwherehouse1} alt="Illustrative" className="rounded-lg shadow-md max-w-full h-auto" />
-        </div>
-
-        <div className="md:w-1/2 p-4">
-          <h2 className="text-2xl font-bold mb-4 text-yellow-300"
-           style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)" }}>KARISHMA GLOBAL VENTURE'S HEADQUARTERS</h2>
-          <p className="text-lg text-black">
-          KGV's headquarters, situated in the bustling city center of NSP(Delhi), serves as the epicenter of our innovative e-mobility solutions. With state-of-the-art facilities and a dynamic team of experts, we are driving forward the future of transportation with passion and purpose. Our headquarters embodies KGV's commitment to excellence and sustainability, featuring modern architecture and eco-friendly design elements. From here, we coordinate our research and development efforts, product manufacturing, and customer support services to ensure seamless operations and exceptional customer experiences. At KGV, we believe in fostering a collaborative and inclusive work environment where creativity thrives and ideas flourish. Our dedicated team works tirelessly to push the boundaries of innovation and deliver cutting-edge solutions that empower individuals and communities. Join us at KGV Headquarters and be part of a journey towards a cleaner, greener future. Together, we can revolutionize the way we move and create a more sustainable world for generations to come.
-          </p>
-        </div>
-      </div> */}
     </div>
 
 <MissionVision />
@@ -321,6 +292,7 @@ export const Home = () => {
 
 <div className="w-screen h-auto relative z-10 p-6 md:p-12 overflow-hidden">
   <img
+   alt="Background goldenwave"
     src={goldenwave}
     className="w-full h-full object-cover absolute inset-0 scale-110"
     loading="lazy"
@@ -365,19 +337,19 @@ export const Home = () => {
       className="items-center hover:scale-110 transition-all duration-500" 
       to={"https://hindi.news18.com/news/auto/petrol-bike-will-also-become-electric-2-brothers-have-invented-a-kit-7880156.html?1701845158"}
     >
-      <img src={news} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
+      <img alt="Background news" src={news} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
     </Link>
     <Link 
       className="items-center hover:scale-110 transition-all duration-500" 
       to={"https://www.ehitavada.com/index.php?edition=NCpage&date=2024-08-29&page=3"}
     >
-      <img src={news1} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
+      <img alt="Background news1" src={news1} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
     </Link>
     <Link 
       className="items-center hover:scale-110 transition-all duration-500" 
       to={"https://epaper.bhaskarhindi.com/3911626/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%AA%E0%A5%81%E0%A4%B0-%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%AD/%E0%A4%A8%E0%A4%BE%E0%A4%97%E0%A4%AA%E0%A5%81%E0%A4%B0-%E0%A4%B5%E0%A4%BF%E0%A4%A6%E0%A4%B0%E0%A5%8D%E0%A4%AD#page/19/1"}
     >
-      <img src={news2} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
+      <img alt="Background news2" src={news2} className="w-[300px] h-[300px] max-w-[300px] mx-auto border-black border-2 rounded-md" loading="lazy" />
     </Link>
   </div>
 </div>

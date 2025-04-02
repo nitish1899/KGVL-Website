@@ -94,11 +94,10 @@ import axios from "axios"
 
   return (
     <div className=" overflow-hidden relative  ">
-         <img src={wave} className="absolute -z-10 " loading="lazy"/>
+         <img alt="aaa" src={wave} className="absolute -z-10 " loading="lazy"/>
 
     <div className="flex-col  items-center  mx-auto w-11/12">
-
-     
+    
     <div class="flex  items-center justify-center py-10 rounded-lg bg-black bg-opacity-10    font-inter w-full   mx-auto mt-14 px-10 ">
          {/* Form */}
          <form

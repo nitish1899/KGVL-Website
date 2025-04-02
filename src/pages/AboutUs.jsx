@@ -12,6 +12,7 @@ import crausal8 from "../resource/crausal8.jpg";
 
 import pusparaj from "../resource/pusparaj.png";
 import uttam from "../resource/uttam.png";
+import Siddharth from "../resource/Siddharth.jpeg";
 
 import wave from "../resource/wave_final.png";
 import goldenwave from "../resource/golden_wave.png";
@@ -99,7 +100,7 @@ export const AboutUs = () => {
   </div>
 
   {/* Team Section */}
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 ">
     {/* Team Member 1 */}
     <div className="bg-white shadow-lg rounded-lg p-8 transition-transform transform hover:scale-105">
       <div className="flex justify-center mb-6">
@@ -111,7 +112,7 @@ export const AboutUs = () => {
       </div>
       <div className="text-center">
         <h3 className="text-2xl font-bold text-gray-800">Mr. Purushottam P Singhal</h3>
-        <p className="text-gray-500 text-lg mb-4">CEO</p>
+        <p className="text-gray-500 text-lg mb-4">Co-Founder</p>
         <p className="text-gray-700">
           CEO of the company with a B.Com, Mores, and MBA in Logistics. Mr. Singhal has led the organization
           since 1990, achieving milestones across Pan India. He is also a social activist and trustee of S.H. Jaiparia
@@ -130,7 +131,7 @@ export const AboutUs = () => {
       </div>
       <div className="text-center">
         <h3 className="text-2xl font-bold text-gray-800">Dr. Uttam Singhal</h3>
-        <p className="text-gray-500 text-lg mb-4">Managing Director</p>
+        <p className="text-gray-500 text-lg mb-4">Co-Founder</p>
         <p className="text-gray-700">
           Managing Director with a B.Com (H) & MBA (Fin), leading with excellence since 2006. Recognized for his
           modern outlook and innovative solutions, Dr. Singhal has expanded our reach across India with a strong vendor
@@ -138,8 +139,27 @@ export const AboutUs = () => {
         </p>
       </div>
     </div>
+    <div className="bg-white shadow-lg rounded-lg p-8 transition-transform transform hover:scale-105">
+      <div className="flex justify-center mb-6">
+        <img
+          src={Siddharth}
+          alt="Mr. Siddharth "
+          className="w-48 h-48 rounded-full object-cover shadow-lg"
+        />
+      </div>
+      <div className="text-center">
+        <h3 className="text-2xl font-bold text-gray-800">Mr. Siddharth Kashyap</h3>
+        <p className="text-gray-500 text-lg mb-4">CFO </p>
+        <p className="text-gray-700">
+       CFO & COO with expertise in financial management, startup funding, and business strategy. As a key leader at Karishma Global Ventures LLP, he has been instrumental in driving financial growth and operational efficiency. A graduate of Delhi Technological University (DCE), Siddharth is known for his strategic vision, analytical skills, and innovative approach in scaling businesses and managing financial operations.
+        </p>
+      </div>
+    </div>
   </div>
+  
 </div>
+
+
 
 
 

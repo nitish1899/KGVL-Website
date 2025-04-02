@@ -1,16 +1,11 @@
 import { useState } from "react";
 import React from "react";
-import wave from "../resource/wave_final.png";
+
 import { BusinessBook } from "../components/BusinessBook";
 import { ContactCompany } from "../components/ContactCompany";
-import { MdEmail } from "react-icons/md";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
-import { Booking } from "./Booking";
-import { Paythousand } from "./Paythousand";
 import DistributerFlex from "../resource/DistributerFlex.png"
 import { Link } from "react-router-dom";
 

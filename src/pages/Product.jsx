@@ -1,30 +1,23 @@
 import React from "react";
 import wave from "../resource/wave_final.png";
-import goldenwave from "../resource/golden_wave.png";
 import { Book } from "../components/Book";
 import { Button2 } from "../components/Button2";
 import { BenefitCard } from "../components/BenefitCard";
 import { comp } from "../Data/Components";
 import { Link } from "react-router-dom";
-import img_comp from "../resource/compare_list.png";
 import { BusinessBook } from "../components/BusinessBook";
-import bike5 from '../resource/bike_main.png';
+import bike5 from '../resource/bike2.png';
 import heroImg from '../resource/prodcuthero.png'
 import  { useState } from 'react';
 import "../components/Phone.css" 
 import hx31 from "../resource/crausal1.jpg";
 import hx32 from "../resource/crausal4.jpg";
 import hx33 from "../resource/crausal5.jpg";
-
-
 import bike1 from '../resource/bike1.jpg';
 import bike2 from '../resource/bike2.jpg';
 import bike4 from '../resource/bike4.jpg';
-
 import crausal7 from "../resource/crausal7.jpg";
 import crausal8 from "../resource/crausal8.jpg";
-
-
 import productc from "../resource/productc.png";
 import modelc from "../resource/modelc.png";
 
@@ -46,11 +39,12 @@ export const Product = () => {
      
       <div className="w-screen h-full flex flex-col items-center justify-center">
         <img
+        alt="heroimg"
           src={heroImg}
           className="w-screen h-screen  "
           loading="lazy"
         />
-        <img src={bike5} className="absolute lg:hover:scale-110 lg:transition-all lg:duration-500 "/>
+        <img alt="bike5" src={bike5} className="absolute lg:hover:scale-110 lg:transition-all lg:duration-500 "/>
         <Link to={"/booking"}>
         <button className="relative bottom-40  bg-black font-semibold py-3 px-5 rounded text-white">Buy Now</button>
         </Link>
@@ -59,6 +53,7 @@ export const Product = () => {
 
       <div className="md:h-1/2 sm:pt-[4%] sm:pb-[4%] mt-10  classproduct w-full  flex flex-col    justify-center relative items-center   z-10 ">
         <img
+          alt="wave"
           src={wave}
           className="imageclass w-full absolute h-full blur-[1px] top-0 -z-10"
           loading="lazy"
@@ -107,20 +102,20 @@ export const Product = () => {
           <p className="text-sm text-gray-600 mb-4">#WASTETOWEALTH</p>
           <div className="flex justify-between mb-4">
             <img
+              alt="crausal7"
               src={crausal7}
-              alt="Image 1"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(crausal7)}
             />
             <img
+              alt="crausal8"
               src={crausal8}
-              alt="Image 2"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300 mx-2"
               onClick={() => openModal(crausal8)}
             />
             <img
+              alt="crausal7"
               src={crausal7}
-              alt="Image 3"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(crausal7)}
             />
@@ -141,20 +136,20 @@ export const Product = () => {
           <p className="text-sm text-gray-600 mb-4">#ROZKAHUMSAFAR</p>
           <div className="flex justify-between mb-4">
             <img
+              alt="bike2"
               src={bike2}
-              alt="Image 1"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(bike2)}
             />
             <img
+              alt="bike1"
               src={bike1}
-              alt="Image 2"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300 mx-2"
               onClick={() => openModal(bike1)}
             />
             <img
+              alt="bike4"
               src={bike4}
-              alt="Image 3"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(bike4)}
             />
@@ -174,20 +169,20 @@ export const Product = () => {
           <p className="text-sm text-gray-600 mb-4">#SPEEDYRIDES</p>
           <div className="flex justify-between mb-4">
             <img
+              alt="hx31"
               src={hx31}
-              alt="Image 1"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(hx31)}
             />
             <img
+              alt="hx32"
               src={hx32}
-              alt="Image 2"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300 mx-2"
               onClick={() => openModal(hx32)}
             />
             <img
+              alt="hx33"
               src={hx33}
-              alt="Image 3"
               className="w-1/3 object-cover rounded-lg shadow-md cursor-pointer transform hover:scale-105 transition duration-300"
               onClick={() => openModal(hx33)}
             />
@@ -223,73 +218,20 @@ export const Product = () => {
     <div className="w-full mt-8">
       <img
         src={productc}
-        alt="Responsive Image"
+        alt="Responsive"
         className="w-full h-auto object-cover rounded-lg shadow-md"
       />
     </div>
     <div className="w-full mt-8">
       <img
         src={modelc}
-        alt="Responsive Image"
+        alt="Responsive"
         className="w-full h-auto object-cover rounded-lg shadow-md"
       />
     </div>
 
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-      {/* <div className=" w-[95%] mx-auto  border-2 border-black   flex flex-col justify-center items-center gap-8 pt-7 mt-7 mb-7 pb-7 rounded-lg  ">
-        <div className="uppercase font-bold sm:text-3xl text-center min-[320px]:text-lg">
-          {" "}
-          Comparison of motorcyles{" "}
-        </div>
-        <div>
-          <img src={img_comp} loading="lazy"/>
-        </div>
-      </div> */}
-
-  
-      {/* <div className="sm:h-[40%] sm:p-[4%]  w-full  bg-black relative z-10  pt-3 flex justify-center items-center pb-5">
-        <img
-          src={goldenwave}
-          className="w-full blur-[4px] h-full scale-110   absolute -z-10"
-          loading="lazy"
-        />
-        <div className="sm:h-[60%] w-11/12 flex flex-col items-center  max-w-[1204px] mx-auto pb-8  text-white  bg-white bg-opacity-25  rounded-lg   ">
-          <div className="sm:text-[150%] uppercase text-3xl font-bold mt-8 min-[320px]:font-semibold">working</div>
-          <div className=" sm:h-[40%] sm:text-[80%] text-xl  w-[80%] pt-6 min-[320px]:text-[80%]">
-            After the successful installation of the KGV Plug-in hybrid Electric
-            kit. The rider is ready to go. The rider will simply input the key
-            into the keyhole designated for the electric mode and can simply
-            apply the throttle without engaging any gears.For switching back to
-            the petrol mode, the rider just simply needs to remove the key from
-            KGV-designed electric keyhole and insert into the keyhole provided
-            by the respective OEM ,folloing which the rider can run the
-            motorcyle in petrol mode The working mechanism of electric vehicles
-            involves a driver’s input through the throttle, which is controlled
-            by the controller for determining the need of power used by motors.
-            The **Lithium iron phosphate (LFP) battery gives the power in form
-            of electrical energy to the wheel hub motor that converts the
-            electrical energy into mechanical power, for the driver to control
-            the vehicle's speed and direction by the controller. Furthermore,
-            the DC/DC converter regulates the voltage level for the distribution
-            of electricity to the lighting system. This integrated system will
-            allow the electric vehicles to move forward or in reverse direction,
-            responding to the driver inputs.Distribution of weight was taken
-            care by giving battery on back side and fixing the hub motor in
-            front wheel to balance the weight and ensure a smooth drive.
-          </div>
-        </div>
-      </div > */}
-
       <BusinessBook />
     </div>
   );

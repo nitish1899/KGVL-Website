@@ -17,14 +17,14 @@ function SocialMedia() {
      }
      fetchData();
      console.log(posts);
-   },[])
+   })
   return (
     <div>
         <h1>Social Media Posts</h1>
         {
             posts.map((el)=>{
                return <div>
-                  <img src={el.media_url}/>
+                  <img alt="raja" src={el.media_url}/>
                   <p>{el.caption}</p>
                </div>
             })

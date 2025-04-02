@@ -13,6 +13,7 @@ import Distrubuter from "./pages/Distrubuter";
 import { MissionVision } from "./components/MissionVision";
 import { TermsAndConditions } from "./components/TermsAndConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { RentKGVBike } from "./pages/RentKGVBike";
 
 
 const App = () => {
@@ -25,8 +26,9 @@ const App = () => {
       <Route path="/product" element={<Product/>}/>
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/booking" element={<Booking/>}/>
+      <Route path="/rentkgvbike" element={<RentKGVBike/>}/>
       <Route path="/ContactUs" element={<ContactUs/>}/>
-      <Route path="/paymentsuccess" element={< PaymentSuccess />}  />
+      <Route path="/paymentsuccess" element={< PaymentSuccess />}/>
       <Route path="/distribution" element={<  Distrubuter />}   />
       <Route path="/socialmedia" element={<  SocialMedia />}   />
       <Route path="/MissionVision" element={<  MissionVision />}   />
