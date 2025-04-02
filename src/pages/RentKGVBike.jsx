@@ -14,7 +14,7 @@ import Card from "./Card.jsx";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SplendorBike from "../resource/splendor.png";
-import bike5 from "../resource/bike_main.png";
+import bike5 from "../resource/bike2.png";
 import { Link } from "react-router-dom";
 
 export const RentKGVBike = () => {
@@ -129,7 +129,11 @@ export const RentKGVBike = () => {
       <img src={wave} className="absolute -z-10" loading="lazy" />
 
       <div className="flex min-[320px]:flex-col items-center mx-auto max-w-[1204px] w-11/12">
-        <div className="flex min-[320px]:flex-col sm:flex-row min-[320px]:w-full h-full items-center justify-between py-10 rounded-lg bg-black bg-opacity-10 font-inter mx-auto mt-14 px-10">
+      <div className="font-extrabold text-4xl md:text-5xl text-yellow-300 text-center m-8"
+  style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)" }}>
+   Rent the KGV Hybrid Bike
+  </div>
+        <div className="flex min-[320px]:flex-col sm:flex-row min-[320px]:w-full h-full items-center justify-between py-10 rounded-lg bg-yellow-500 bg-opacity-10 font-inter mx-auto my-10 px-10">
           {/* Form */}
           <div>
             <img
@@ -232,19 +236,7 @@ export const RentKGVBike = () => {
                     />
                   </div>
                 </label>
-                <label>
-                  <p className="mb-1 font-semibold text-[0.875rem] leading-[1.375rem] text-richblack-5">
-                    Amount to pay <sup className="text-pink-200">*</sup>
-                  </p>
-                  <select
-                    required
-                    onChange={handleAmountChange}
-                    className="bg-white p-2 rounded-md"
-                  >
-                    <option value={5000}>₹5,000</option>
-                    <option value={10000}>₹10,000</option>
-                  </select>
-                </label>
+
                 <button
                   type="submit"
                   className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded mt-4"

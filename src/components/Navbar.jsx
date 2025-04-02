@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef  } from 'react';
 import { Link } from 'react-router-dom';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaMapMarkerAlt, FaPhoneAlt, FaChevronDown } from 'react-icons/fa';
 import logo from '../resource/logokgv.jpg';
@@ -12,6 +12,20 @@ export const Navbar = () => {
   const [fadeOut, setFadeOut] = useState(false);
   const [isBookingDropdownOpen, setBookingDropdownOpen] = useState(false);
   const [isMobileBookingDropdownOpen, setMobileBookingDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null); // Dropdown ko reference dene ke liye useRef
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setBookingDropdownOpen(false); // Agar click dropdown ke bahar hua to close kar do
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
   
   useEffect(() => {
     const handleScroll = () => {
@@ -69,26 +83,29 @@ export const Navbar = () => {
           <Link to="/" className="hover:border-b-2 hover:border-[#ecf662] ">Home</Link>
           <Link to="/about" className="hover:border-b-2 hover:border-[#ecf662]">About</Link>
           <Link to="/product" className="hover:border-b-2 hover:border-[#ecf662]">Product</Link>
-          <div className="relative">
+          <div className="relative" ref={dropdownRef}>
           <button onClick={() => setBookingDropdownOpen(!isBookingDropdownOpen)} className="hover:border-b-2 hover:border-[#ecf662] flex items-center">
               Booking <FaChevronDown className="ml-1" />
             </button>
             {isBookingDropdownOpen && (
   <div className="absolute bg-white shadow-xl rounded-xl mt-2 w-44 border border-gray-200 overflow-hidden backdrop-blur-md">
     <Link
-      to="/booking/bike"
+      to="/Purchagekgvbike"
+      onClick={() => setBookingDropdownOpen(false)}
       className="block px-5 py-3 text-gray-800 hover:bg-gray-100 transition-all duration-200 ease-in-out"
     >
       🏍️ KGV HYBRID BIKE 
     </Link>
     <Link
-      to="/booking/kit"
+      to="/booking"
+      onClick={() => setBookingDropdownOpen(false)}
       className="block px-5 py-3 text-gray-800 hover:bg-gray-100 transition-all duration-200 ease-in-out"
     >
       🔖 KGV HYBRID KIT
     </Link>
     <Link
-      to="/booking/rent"
+      to="/rentkgvbike"
+      onClick={() => setBookingDropdownOpen(false)}
       className="block px-5 py-3 text-gray-800 hover:bg-gray-100 transition-all duration-200 ease-in-out"
     >
       📃 KGV HYBRID BIKE RENT
@@ -140,19 +157,22 @@ export const Navbar = () => {
       {isMobileBookingDropdownOpen && (
         <div className="bg-gray-800 text-white w-full flex flex-col rounded-md overflow-hidden shadow-md">
           <Link
-            to="/booking/bike"
+            to="/Purchagekgvbike"
+            onClick={() => setBookingDropdownOpen(false)}
             className="block px-6 py-2 hover:bg-gray-700 transition duration-200"
           >
             🏍️ BOOK KGV HYBRID BIKE
           </Link>
           <Link
-            to="/booking/kit"
+            to="/booking"
+            onClick={() => setBookingDropdownOpen(false)}
             className="block px-6 py-2 hover:bg-gray-700 transition duration-200"
           >
             🔖 BOOK KGV HYBRID KIT
           </Link>
           <Link
-            to="/booking/rent"
+            to="/rentkgvbike"
+            onClick={() => setBookingDropdownOpen(false)}
             className="block px-6 py-2 hover:bg-gray-700 transition duration-200"
           >
             📃 RENT KGV HYBRID BIKE 

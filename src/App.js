@@ -14,6 +14,7 @@ import { MissionVision } from "./components/MissionVision";
 import { TermsAndConditions } from "./components/TermsAndConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { RentKGVBike } from "./pages/RentKGVBike";
+import { Purchagekgvbike } from "./pages/Purchagekgvbike";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
       <Route path="/about" element={<AboutUs/>}/>
       <Route path="/booking" element={<Booking/>}/>
       <Route path="/rentkgvbike" element={<RentKGVBike/>}/>
+      <Route path="/Purchagekgvbike" element={<Purchagekgvbike/>}/>
       <Route path="/ContactUs" element={<ContactUs/>}/>
       <Route path="/paymentsuccess" element={< PaymentSuccess />}/>
       <Route path="/distribution" element={<  Distrubuter />}   />

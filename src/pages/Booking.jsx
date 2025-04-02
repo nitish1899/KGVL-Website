@@ -14,7 +14,7 @@ import Card from "./Card.jsx";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SplendorBike from "../resource/splendor.png";
-import bike5 from "../resource/bike_main.png";
+import bike5 from "../resource/bike2.png";
 import { Link } from "react-router-dom";
 
 export const Booking = () => {
@@ -129,7 +129,11 @@ export const Booking = () => {
       <img src={wave} className="absolute -z-10" loading="lazy" />
 
       <div className="flex min-[320px]:flex-col items-center mx-auto max-w-[1204px] w-11/12">
-        <div className="flex min-[320px]:flex-col sm:flex-row min-[320px]:w-full h-full items-center justify-between py-10 rounded-lg bg-black bg-opacity-10 font-inter mx-auto mt-14 px-10">
+      <div className="font-extrabold text-4xl md:text-5xl text-yellow-300 text-center m-8"
+  style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)" }}>
+    Purchase KGV Hybrid Kit
+  </div>
+        <div className="flex min-[320px]:flex-col sm:flex-row min-[320px]:w-full h-full items-center justify-between py-10 rounded-lg bg-black bg-opacity-10 font-inter mx-auto my-10 px-10">
           {/* Form */}
           <div>
             <img

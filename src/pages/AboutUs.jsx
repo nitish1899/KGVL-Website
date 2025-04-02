@@ -1,6 +1,6 @@
 
 import React from "react";
-import crausal1 from "../resource/crausal1.jpg";
+import crausal1 from "../resource/bikeabout.jpg";
 import crausal2 from "../resource/crausal2.jpg";
 import crausal3 from "../resource/crausal3.jpg";
 import crausal4 from "../resource/crausal4.jpg";
@@ -114,7 +114,7 @@ export const AboutUs = () => {
         <h3 className="text-2xl font-bold text-gray-800">Mr. Purushottam P Singhal</h3>
         <p className="text-gray-500 text-lg mb-4">Co-Founder</p>
         <p className="text-gray-700">
-          CEO of the company with a B.Com, Mores, and MBA in Logistics. Mr. Singhal has led the organization
+        Co-Founder of the company with a B.Com, Mores, and MBA in Logistics. Mr. Singhal has led the organization
           since 1990, achieving milestones across Pan India. He is also a social activist and trustee of S.H. Jaiparia
           International Hospital, with a strong reputation in handling critical jobs.
         </p>
@@ -133,7 +133,7 @@ export const AboutUs = () => {
         <h3 className="text-2xl font-bold text-gray-800">Dr. Uttam Singhal</h3>
         <p className="text-gray-500 text-lg mb-4">Co-Founder</p>
         <p className="text-gray-700">
-          Managing Director with a B.Com (H) & MBA (Fin), leading with excellence since 2006. Recognized for his
+        Co-Founder with a B.Com (H) & MBA (Fin), leading with excellence since 2006. Recognized for his
           modern outlook and innovative solutions, Dr. Singhal has expanded our reach across India with a strong vendor
           base.
         </p>
@@ -151,7 +151,7 @@ export const AboutUs = () => {
         <h3 className="text-2xl font-bold text-gray-800">Mr. Siddharth Kashyap</h3>
         <p className="text-gray-500 text-lg mb-4">CFO </p>
         <p className="text-gray-700">
-       CFO & COO with expertise in financial management, startup funding, and business strategy. As a key leader at Karishma Global Ventures LLP, he has been instrumental in driving financial growth and operational efficiency. A graduate of Delhi Technological University (DCE), Siddharth is known for his strategic vision, analytical skills, and innovative approach in scaling businesses and managing financial operations.
+       CFO & COO with expertise in financial management, startup funding, and business strategy. As a key leader at Karishma Global Ventures LLP, he has been instrumental in driving financial growth and operational efficiency. 
         </p>
       </div>
     </div>

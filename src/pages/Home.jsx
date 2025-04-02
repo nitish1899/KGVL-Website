@@ -1,18 +1,17 @@
 
 
 import React from "react";
-import crausal1 from "../resource/crausal1.jpg";
-import crausal2 from "../resource/crausal2.jpg";
-import crausal3 from "../resource/crausal3.jpg";
-import crausal4 from "../resource/crausal4.jpg";
-import crausal5 from "../resource/crausal5.jpg";
+import crausal1 from "../resource/gallary1.JPG";
+import crausal2 from "../resource/gallary2.JPG";
+import crausal3 from "../resource/bikeabout.jpg";
+import crausal4 from "../resource/avanger.jpg";
+import crausal5 from "../resource/victor.jpg";
 import crausal6 from "../resource/crausal6.jpg";
 import crausal7 from "../resource/crausal7.jpg";
 import crausal8 from "../resource/crausal8.jpg";
-import crausal15 from "../resource/crausal15.png";
-import crausal16 from "../resource/crausal16.jpg";
-import crausal17 from "../resource/crausal17.png";
-
+import crausal15 from "../resource/kgvsecond.png";
+import crausal16 from "../resource/kgvfirst.png";
+import crausal17 from "../resource/kgvthird.png";
 import sdg1 from "../resource/sdg1.png";
 import sdg2 from "../resource/sdg2.png";
 import sdg3 from "../resource/sdg3.png";
@@ -45,14 +44,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const Home = () => {
   const images = [
-    crausal1,
-    crausal2,
     crausal3,
+    crausal2,
+    crausal1,
     crausal4,
     crausal5,
-    crausal6,
-    crausal7,
-    crausal8,
+ 
   
   ];
 
@@ -132,7 +129,6 @@ export const Home = () => {
   <div className="hover:scale-110 transition-all duration-500 box-content flex flex-col justify-center rounded-xl shadow-2xl h-[50%] p-6 w-[80%] min-w-[320px] max-w-[600px] items-center gap-y-6 bg-white border-4 border-yellow-200"
     style={{ boxShadow: '0 10px 20px rgba(0, 0, 0, 0.9)' }}
   >
-    
     <div
       className="text-4xl font-extrabold text-center text-transparent bg-clip-text text-yellow-300"
       style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.8)" }}

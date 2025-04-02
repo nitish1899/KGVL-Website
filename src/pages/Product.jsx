@@ -7,7 +7,7 @@ import { comp } from "../Data/Components";
 import { Link } from "react-router-dom";
 import { BusinessBook } from "../components/BusinessBook";
 import bike5 from '../resource/bike2.png';
-import heroImg from '../resource/prodcuthero.png'
+import heroImg from '../resource/Frame2.png'
 import  { useState } from 'react';
 import "../components/Phone.css" 
 import hx31 from "../resource/crausal1.jpg";
@@ -16,14 +16,49 @@ import hx33 from "../resource/crausal5.jpg";
 import bike1 from '../resource/bike1.jpg';
 import bike2 from '../resource/bike2.jpg';
 import bike4 from '../resource/bike4.jpg';
+import avanger from '../resource/avanger.jpg';
+import Tvs from '../resource/Tvs.jpg';
+import victor  from '../resource/victor.jpg';
 import crausal7 from "../resource/crausal7.jpg";
 import crausal8 from "../resource/crausal8.jpg";
 import productc from "../resource/productc.png";
 import modelc from "../resource/modelc.png";
 
+
+const bikes = [
+  {
+    id: 1,
+    name: "TVS Sport",
+    kit: "HX2",
+    hashtag: "#ROZKAHUMSAFAR",
+    description:
+      "TVS Sport with HX2 Hybrid Kit ensures fuel efficiency, enhanced power, and eco-friendly rides.",
+    image: Tvs,
+  },
+  {
+    id: 2,
+    name: "TVS Victor 110cc",
+    kit: "HX2",
+    hashtag: "#ROZKAHUMSAFAR",
+    description:
+      "The TVS Victor 110cc, powered by the HX2 Hybrid Kit, provides an economical and smooth ride for daily commuters.",
+    image: victor ,
+  },
+  {
+    id: 3,
+    name: "Avenger 150cc",
+    kit: "HX3",
+    hashtag: "#SPEEDYRIDES",
+    description:
+      "With the HX3 Hybrid Kit, the Avenger 150cc delivers a thrilling ride with boosted torque and eco-friendly fuel options.",
+    image: avanger,
+  },
+];
+
 export const Product = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState('');
+
 
   const openModal = (imageSrc) => {
     setSelectedImage(imageSrc);
@@ -91,7 +126,7 @@ export const Product = () => {
 
       <div className="min-h-screen  py-8">
   <div className="container mx-auto p-6">
-    <h1 className="text-4xl font-bold text-center text-gray-800 mb-12">
+    <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-12">
       KGV Hybrid Kits
     </h1>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -215,6 +250,45 @@ export const Product = () => {
         </div>
       )}
     </div>
+
+
+  </div>
+
+
+    <div className="container mx-auto p-6">
+      <h1 className="text-3xl font-extrabold text-center text-gray-900 mb-12 drop-shadow-lg">
+        Hybrid Kit Installed Bikes
+      </h1>
+
+      {/* Bike Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {bikes.map((bike) => (
+          <div
+            key={bike.id}
+            className="bg-gradient-to-b from-white to-yellow-100 border-4 border-yellow-200  border-b-4   bg-opacity-90 backdrop-blur-xl shadow-2xl rounded-3xl overflow-hidden transition-transform transform hover:scale-105 hover:shadow-2xl p-6 relative "
+          >
+            <div className="relative">
+              <img
+                src={bike.image}
+                alt={bike.name}
+                className="w-full h-60 object-cover rounded-3xl"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 rounded-3xl"></div>
+            </div>
+            <div className="p-6 text-center">
+              <h2 className="text-3xl font-bold text-gray-800 mb-2">{bike.name}</h2>
+              <p className="text-md text-gray-500 mb-4 italic">{bike.hashtag}</p>
+              <p className="text-gray-700 mb-4 leading-relaxed">{bike.description}</p>
+              <span className="inline-block px-5 py-2 bg-gradient-to-r from-green-500 to-green-700 text-white font-semibold rounded-full shadow-lg">
+                {bike.kit} Hybrid Kit
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+
+      
     <div className="w-full mt-8">
       <img
         src={productc}
@@ -229,8 +303,7 @@ export const Product = () => {
         className="w-full h-auto object-cover rounded-lg shadow-md"
       />
     </div>
-
-  </div>
+    </div>
 </div>
       <BusinessBook />
     </div>
