@@ -257,7 +257,7 @@ const Distrubuter = () => {
               <p>Are you passionate about cycling and interested in bringing the joy of riding KGV hybrid bikes to your community? Join us as a distributor and be a part of our journey to redefine urban commuting!</p>
               <p className="font-semibold text-md">Ready to embark on this exciting journey? Click the button below to express your interest and join the KGV family today!</p>
           </div>
-          <Link to="https://docs.google.com/forms/d/e/1FAIpQLScS_YI7IFAzHgrzPfLOMQrAzA4-SculRqhotcYi-GroqDU6PQ/viewform?usp=send_form">
+          <Link to="https://forms.gle/MoAyKut9eX1PrEru6">
           <button className="p-4 bg-[#57E226] rounded-lg text-white font-bold">Join the KGV Family</button>
           </Link>
         </div>
