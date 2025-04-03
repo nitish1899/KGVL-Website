@@ -42,7 +42,7 @@ import axios from "axios"
     e.preventDefault();
     // mailer();
     try {
-      const response = await axios.post("http://localhost:5000/rent", {
+      const response = await axios.post("https://kgvbsckend-9-7-24.onrender.com/rent", {
         name: firstName,
         lastname: lastName,
         email,
