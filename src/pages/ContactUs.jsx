@@ -35,13 +35,10 @@ import axios from "axios"
       [e.target.name]: e.target.value,
     }))
   }
-  // /
-  ///
- // http://localhost:5000/register
+
   // Handle Form Submission
   const handleOnSubmit = async (e) => {
     e.preventDefault();
-    // mailer();
     try {
       const response = await axios.post("https://kgvbsckend-9-7-24.onrender.com/register", {
         name: firstName,
@@ -89,8 +86,6 @@ import axios from "axios"
 
     // Navigate to dashboard after a delay (adjust as needed)
   }
-
-
 
   return (
     <div className=" overflow-hidden relative  ">

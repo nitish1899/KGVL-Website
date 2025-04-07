@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Navbar } from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home";
@@ -18,28 +18,26 @@ import { Purchagekgvbike } from "./pages/Purchagekgvbike";
 
 
 const App = () => {
-  const media = { mobile: "768px", tab: "998px" };
-  return(
+  // const media = { mobile: "768px", tab: "998px" };
+  return (
     <div >
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<Home/>}/>
-      <Route path="/product" element={<Product/>}/>
-      <Route path="/about" element={<AboutUs/>}/>
-      <Route path="/booking" element={<Booking/>}/>
-      <Route path="/rentkgvbike" element={<RentKGVBike/>}/>
-      <Route path="/Purchagekgvbike" element={<Purchagekgvbike/>}/>
-      <Route path="/ContactUs" element={<ContactUs/>}/>
-      <Route path="/paymentsuccess" element={< PaymentSuccess />}/>
-      <Route path="/distribution" element={<  Distrubuter />}   />
-      <Route path="/socialmedia" element={<  SocialMedia />}   />
-      <Route path="/MissionVision" element={<  MissionVision />}   />
-      <Route path="/Termsandconditions" element={<  TermsAndConditions />}   />
-      <Route path="/Privacypolicy" element={<  PrivacyPolicy />}   />
-      
-    </Routes>
-    <Footer/>
-    
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/rentkgvbike" element={<RentKGVBike />} />
+        <Route path="/Purchagekgvbike" element={<Purchagekgvbike />} />
+        <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/paymentsuccess" element={< PaymentSuccess />} />
+        <Route path="/distribution" element={<  Distrubuter />} />
+        <Route path="/socialmedia" element={<  SocialMedia />} />
+        <Route path="/MissionVision" element={<  MissionVision />} />
+        <Route path="/Termsandconditions" element={<  TermsAndConditions />} />
+        <Route path="/Privacypolicy" element={<  PrivacyPolicy />} />
+      </Routes>
+      <Footer />
     </div>
   )
 };
