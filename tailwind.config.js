@@ -22,6 +22,9 @@ module.exports = {
       animation: {
         'bg-color-change': 'bgColorChange 10s infinite',
       },
+      height: {
+        md: '400px', // now you can use h-md
+      },
     },
   },
   plugins: [],
