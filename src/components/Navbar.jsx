@@ -410,13 +410,13 @@ export const Navbar = () => {
             Distribution
           </Link>
           <Link
-            to="/events"
+            to="/event"
             className="hover:border-b-2 hover:border-[#ecf662]"
           >
             Events
           </Link>
           <Link
-            to="/aboutUs"
+            to="/about"
             className="hover:border-b-2 hover:border-[#ecf662]"
           >
             About Us

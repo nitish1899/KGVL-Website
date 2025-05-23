@@ -11,6 +11,7 @@ import SocialMedia from "./pages/SocialMedia";
 import PaymentSuccess from "./pages/paymentSuccess";
 import Distrubuter from "./pages/Distrubuter";
 import { MissionVision } from "./components/MissionVision";
+import Event  from "./components/Event";
 import { TermsAndConditions } from "./components/TermsAndConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { RentKGVBike } from "./pages/RentKGVBike";
@@ -26,6 +27,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product />} />
         <Route path="/about" element={<AboutUs />} />
+        <Route path="/event" element={<Event />} />
         <Route path="/booking" element={<Booking />} />
         <Route path="/rentkgvbike" element={<RentKGVBike />} />
         <Route path="/Purchagekgvbike" element={<Purchagekgvbike />} />

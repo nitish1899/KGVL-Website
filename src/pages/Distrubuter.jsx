@@ -1,59 +1,60 @@
 
 
-export default function HybridBikeCards() {
-  return (
-    <div className="max-w-6xl mx-auto px-4 py-10">
-      <div className="text-center mb-10">
-        <h2 className="text-2xl font-semibold">
-          Ride the Future Your Way with <span className="text-green-600">KGV Hybrid Bikes</span>
-        </h2>
-        <p className="text-gray-600 mt-2">
-          Experience the thrill of hybrid riding with flexible rental and purchase plans — perfect for city cruising and adventure getaways.
-        </p>
-      </div>
+// export default function HybridBikeCards() {
+//   return (
+//     <div className="max-w-6xl mx-auto px-4 py-10">
+//       <div className="text-center mb-10">
+//         <h2 className="text-2xl font-semibold">
+//           Ride the Future Your Way with <span className="text-green-600">KGV Hybrid Bikes</span>
+//         </h2>
+//         <p className="text-gray-600 mt-2">
+//           Experience the thrill of hybrid riding with flexible rental and purchase plans — perfect for city cruising and adventure getaways.
+//         </p>
+//       </div>
 
-      <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
-<div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
-          <div className="md:w-1/3 h-48 md:h-auto bg-gray-200 m-4 rounded-md" />
-          <div className="p-6 flex flex-col justify-center md:w-2/3">
-            <h3 className="text-green-600 font-bold text-xl mb-1">HX-2</h3>
-            <p className="text-gray-600 text-sm mb-2">
-              Powerful urban explorer with extended range and performance.
-            </p>
-            <p className="text-sm">Engine Capacity: 100cc - 125cc</p>
-            <p className="text-sm">Motor Power: 1.5kw</p>
-            <p className="text-sm mb-4">Battery Output: 2.1 kwh</p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-fit">
-              Book Now
-            </button>
-          </div>
-        </div>
+//       <div className="flex flex-col md:flex-row gap-6 justify-center items-stretch">
+// <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
+//           <div className="md:w-1/3 h-48 md:h-auto bg-gray-200 m-4 rounded-md" />
+//           <div className="p-6 flex flex-col justify-center md:w-2/3">
+//             <h3 className="text-green-600 font-bold text-xl mb-1">HX-2</h3>
+//             <p className="text-gray-600 text-sm mb-2">
+//               Powerful urban explorer with extended range and performance.
+//             </p>
+//             <p className="text-sm">Engine Capacity: 100cc - 125cc</p>
+//             <p className="text-sm">Motor Power: 1.5kw</p>
+//             <p className="text-sm mb-4">Battery Output: 2.1 kwh</p>
+//             <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-fit">
+//               Book Now
+//             </button>
+//           </div>
+//         </div>
 
 
 
-        <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
-          <div className="md:w-1/3 h-48 md:h-auto bg-red-200 m-4 rounded-md" />
-          <div className="p-6 flex flex-col justify-center md:w-2/3">
-            <h3 className="text-green-600 font-bold text-xl mb-1">HX-3</h3>
-            <p className="text-gray-600 text-sm mb-2">
-              Maxed-out performance for long rides and tough terrains.
-            </p>
-            <p className="text-sm">Engine Capacity: 125cc - 180cc</p>
-            <p className="text-sm">Motor Power: 2kw</p>
-            <p className="text-sm mb-4">Battery Output: 2.8 kwh</p>
-            <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-fit">
-              Book Now
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-}
+//         <div className="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden">
+//           <div className="md:w-1/3 h-48 md:h-auto bg-red-200 m-4 rounded-md" />
+//           <div className="p-6 flex flex-col justify-center md:w-2/3">
+//             <h3 className="text-green-600 font-bold text-xl mb-1">HX-3</h3>
+//             <p className="text-gray-600 text-sm mb-2">
+//               Maxed-out performance for long rides and tough terrains.
+//             </p>
+//             <p className="text-sm">Engine Capacity: 125cc - 180cc</p>
+//             <p className="text-sm">Motor Power: 2kw</p>
+//             <p className="text-sm mb-4">Battery Output: 2.8 kwh</p>
+//             <button className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded w-fit">
+//               Book Now
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
 
 
 // import React, { useState } from "react";
 // import socialBg from '../resource/socialBg.png';
+// import kgvHero from '../resource/kgvhero.png';
 // export default function KGVHybridBikeForm() {
 
 //   const [engine, setEngine] = useState('100cc');
@@ -98,9 +99,9 @@ export default function HybridBikeCards() {
 //             </button>
 //           </form>
 
-//           <div className="flex justify-center items-center">
-//             <img src={socialBg} alt="KGV Hero" className="max-w-full h-auto" />
-//           </div>
+//   <div className="flex justify-center items-center">
+//     <img src={kgvHero} alt="KGV Hero" className="w-full h-auto max-h-[500px] object-contain rounded-full" />
+//   </div>
 //         </div>
 
 //           <div className="bg-white p-6 rounded-xl mb-6 shadow-md mt-12 max-w-3xl mx-auto">
@@ -200,101 +201,112 @@ export default function HybridBikeCards() {
 //   );
 // }
 
-// import React from 'react';
-// import wave from '../resource/wave_final.png';
-// import socialBg from '../resource/socialBg.png';
-// import kgvHero from '../resource/kgvhero.png';
-// import indiaMap from '../resource/india.png';
+import React from 'react';
+import wave from '../resource/wave_final.png';
+import socialBg from '../resource/socialBg.png';
+import kgvHero from '../resource/kgvhero.png';
+import indiaMap from '../resource/india.png';
 
-// const Distrubuter = () => {
-//   return (
-//     <div className="relative w-full bg-white overflow-hidden">
-//       {/* Background Wave */}
-//       <img src={wave} className="absolute w-full h-full top-0 object-cover opacity-60 z-0" alt="wave background" />
+const Distrubuter = () => {
+  return (
+    <div className="relative w-full bg-white overflow-hidden">
+      {/* Background Wave */}
+      <img src={wave} className="absolute w-full h-full top-0 object-cover opacity-60 z-0" alt="wave background" />
 
-//       <div className="relative z-10 py-12 px-4 sm:px-6 lg:px-8">
-//         {/* Join Today Section */}
-//         <div className="bg-white rounded-lg shadow-2xl p-8 text-center max-w-5xl mx-auto">
-//           <h2 className="text-2xl font-bold text-gray-800 mb-4">
-//             <span className="text-green-600">Join hands with KGV Today</span>
-//           </h2>
-//           <h2 className="text-md font-bold text-gray-800 mb-4">
-//             <span className="text-green-600">#KgvLaoClimateBachao #ChaiSeSastiRide</span>
-//           </h2>
-//                     <button className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700">
-//             LET'S TEAM UP
-//           </button>
-//           <p className="text-gray-700 mb-6">
-//             Are you passionate about cycling and interested in bringing the joy of riding KGV hybrid bikes to your community?
-//             Join us as a distributor and be a part of our journey to redefine urban commuting!
-//           </p>
+      <div className="relative z-10 py-12 px-4 sm:px-6 lg:px-8">
+        {/* Join Today Section */}
+        <div className="bg-white rounded-lg shadow-2xl p-8 text-center max-w-5xl mx-auto">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            <span className="text-green-600">Join hands with KGV Today</span>
+          </h2>
+          <h2 className="text-md font-bold text-gray-800 mb-4">
+            <span className="text-green-600">#KgvLaoClimateBachao #ChaiSeSastiRide</span>
+          </h2>
+                    <button className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 my-4">
+            LET'S TEAM UP
+          </button>
+          <p className="text-gray-700 mb-6">
+            Are you passionate about cycling and interested in bringing the joy of riding KGV hybrid bikes to your community?
+            Join us as a distributor and be a part of our journey to redefine urban commuting!
+          </p>
 
 
-//           <p className="mt-6 font-medium text-green-700">
-//             Embrace sustainability with a chance Of earning up to <br />
-//             <span className="text-2xl font-bold text-green-800">7-10 Lakhs/month*</span>
-//           </p>
-//           <div className="mt-2 text-orange-600 font-semibold text-lg">One Distributor One District</div>
-//         </div>
+<div className="mt-6 space-y-4 text-center">
+  {/* Button and Earnings stacked vertically */}
+  <div className="flex flex-col items-center gap-2">
+    <button className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700">
+      Embrace sustainability with a chance of earning up to
+    </button>
+    <span className="text-2xl font-bold text-green-800">7-10 Lakhs/month*</span>
+  </div>
 
-//         {/* Form Section */}
-//         <div className="bg-white rounded-lg shadow-2xl p-6 mt-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-//           <form className="space-y-4">
-//             <div className="grid grid-cols-2 gap-4">
-//               <input className="border rounded px-3 py-2" placeholder="Full Name*" />
-//               <input className="border rounded px-3 py-2" placeholder="Father's Name" />
-//               <input className="border rounded px-3 py-2" placeholder="Date of Birth" />
-//               <input className="border rounded px-3 py-2" placeholder="Phone" />
-//               <input className="border rounded px-3 py-2" placeholder="Email" />
-//               <select className="border rounded px-3 py-2">
-//                 <option>Select Identification Proof</option>
-//                 <option>Aadhaar</option>
-//                 <option>Driving License</option>
-//                 <option>PAN Card</option>
-//               </select>
-//               <input className="border rounded px-3 py-2" placeholder="ID Number" />
-//               <input className="border rounded px-3 py-2" placeholder="Address line 1" />
-//               <input className="border rounded px-3 py-2" placeholder="Address line 2" />
-//               <input className="border rounded px-3 py-2" placeholder="City" />
-//               <input className="border rounded px-3 py-2 col-span-2" placeholder="State" />
-//             </div>
-//             <button type="submit" className="bg-green-600 text-white w-full py-2 rounded font-semibold hover:bg-green-700">
-//               Join the KGV Family
-//             </button>
-//           </form>
+  {/* Second Button */}
+  <button className="bg-green-600 text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700">
+    One Distributor One District
+  </button>
+</div>
 
-//           <div className="flex justify-center items-center">
-//             <img src={socialBg} alt="KGV Hero" className="max-w-full h-auto" />
-//           </div>
-//         </div>
-
-//         {/* Ride Care-free Section */}
-//         <div className="bg-white rounded-lg shadow-2xl p-8 mt-12 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-//           <div>
-//             <img src={indiaMap} alt="India Map" className="w-full h-auto rounded-lg" />
-//           </div>
-// <div className="flex flex-col justify-center p-8 space-y-4">
-//   <div className="bg-orange-100 text-orange-600 text-center font-bold text-xl rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
-//     RIDE CARE-FREE WITH KGV SMART MOBILITY
-//   </div>
-//   <div className="bg-gray-100 text-gray-700 text-center rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
-//     Ride carefree with KGV Smart Mobility! Cut your travel expenses by 90%. Enjoy a hassle-free stress-free journey!
-//   </div>
-//   <div className="bg-green-100 text-green-700 text-center font-semibold rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
-//     For the first time ever India has its own patented technology driven by 'Make in India' and 'Atmanirbhar Bharat' initiatives.
-//     KGV introduces a unique innovation: converting regular bikes like never before.
-//   </div>
-// </div>
+</div>
 
 
 
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
+        {/* Form Section */}
+        <div className="bg-white rounded-lg shadow-2xl p-6 mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form className="space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <input className="border rounded px-3 py-2" placeholder="Full Name*" />
+              <input className="border rounded px-3 py-2" placeholder="Father's Name" />
+              <input className="border rounded px-3 py-2" placeholder="Date of Birth" />
+              <input className="border rounded px-3 py-2" placeholder="Phone" />
+              <input className="border rounded px-3 py-2" placeholder="Email" />
+              <select className="border rounded px-3 py-2">
+                <option>Select Identification Proof</option>
+                <option>Aadhaar</option>
+                <option>Driving License</option>
+                <option>PAN Card</option>
+              </select>
+              <input className="border rounded px-3 py-2" placeholder="ID Number" />
+              <input className="border rounded px-3 py-2" placeholder="Address line 1" />
+              <input className="border rounded px-3 py-2" placeholder="Address line 2" />
+              <input className="border rounded px-3 py-2" placeholder="City" />
+              <input className="border rounded px-3 py-2 col-span-2" placeholder="State" />
+            </div>
+            <button type="submit" className="bg-green-600 text-white w-full py-2 rounded font-semibold hover:bg-green-700">
+              Join the KGV Family
+            </button>
+          </form>
+  <div className="flex justify-center items-center">
+    <img src={kgvHero} alt="KGV Hero" className="w-full h-auto max-h-[500px] object-contain rounded-full" />
+  </div>
+        </div>
 
-// export default Distrubuter;
+        {/* Ride Care-free Section */}
+        <div className="bg-white rounded-lg shadow-2xl p-8 mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <img src={indiaMap} alt="India Map" className="w-full h-auto rounded-lg" />
+          </div>
+<div className="flex flex-col justify-center p-8 space-y-4">
+  <div className="bg-orange-100 text-orange-600 text-center font-bold text-xl rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
+    RIDE CARE-FREE WITH KGV SMART MOBILITY
+  </div>
+  <div className="bg-gray-100 text-gray-700 text-center rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
+    Ride carefree with KGV Smart Mobility! Cut your travel expenses by 90%. Enjoy a hassle-free stress-free journey!
+  </div>
+  <div className="bg-green-100 text-green-700 text-center font-semibold rounded-full px-4 py-4 min-h-[100px] flex items-center break-words overflow-hidden whitespace-normal">
+    For the first time ever India has its own patented technology driven by 'Make in India' and 'Atmanirbhar Bharat' initiatives.
+    KGV introduces a unique innovation: converting regular bikes like never before.
+  </div>
+</div>
+
+
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Distrubuter;
 
 
 // import React from "react";
