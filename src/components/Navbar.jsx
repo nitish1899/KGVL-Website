@@ -118,10 +118,10 @@ export const Navbar = () => {
         </div>
 
         <div className="hidden md:flex items-center gap-3 mb-3">
-          <a href="https://www.facebook.com/share/DfiunaneErmM6FqR/?mibextid=qi2Omg" className="text-blue-600 text-2xl hover:text-blue-800" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/share/1EFtxnRMuL/" className="text-blue-600 text-2xl hover:text-blue-800" target="_blank" rel="noopener noreferrer">
             <FaFacebookF />
           </a>
-          <a href="https://x.com/KGVllp?t=LyZz_BWLQevEMsUFA8ggew&s=08" className="text-blue-600 text-2xl hover:text-blue-600" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/KGVllp?t=ecvFy4j65dHiRpRzpOWGtg&s=09" className="text-blue-600 text-2xl hover:text-blue-600" target="_blank" rel="noopener noreferrer">
             <FaTwitter />
           </a>
           <a href="https://www.instagram.com/kgvllp?igsh=MWZwbnZxbG4xZnZz" className="text-pink-500 text-2xl hover:text-pink-700" target="_blank" rel="noopener noreferrer">
