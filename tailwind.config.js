@@ -3,11 +3,12 @@ module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
-  theme: { 
+  theme: {
     fontFamily: {
       inter: ["Inter", "sans-serif"],
       "edu-sa": ["Edu SA Beginner", "cursive"],
       mono: ["Roboto Mono", "monospace"],
+      playfair: ["'Playfair Display'", "serif"], // ✅ Added this line
     },
     extend: {
       keyframes: {
