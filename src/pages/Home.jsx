@@ -346,6 +346,8 @@ import backgroundBlob from "../resource/backgroundBlob.svg";
 import kgvmitra from "../resource/kgvmitra.png";
 import bike5 from "../resource/bike2.png";
 import heroImg from "../resource/Frame2.png";
+import mountain from "../resource/mountain.png";
+
 
 export function Home() {
   return (
@@ -509,8 +511,9 @@ export function Home() {
       </section>
 
       {/* Bottom Section */}
-      <section className="bg-green-700 text-white px-6 py-8 flex flex-col md:flex-row items-center justify-between max-full mx-auto">
-        <p className="text-sm md:text-base max-w-3xl">
+      <section className="bg-green-700 text-white px-6 flex flex-col md:flex-row items-center justify-between max-full mx-auto"
+      style={{ backgroundImage: `url(${mountain})`, backgroundSize: 'cover', backgroundPosition: 'center 80%' }}>
+        <p className="text-lg md:text-base max-w-3xl ml-16 ">
           Karishma Global Ventures LLP, we are revolutionizing the future of
           transportation. Our cutting-edge Smart E-Mobility Solution enables you
           to convert your conventional petrol bike into a hybrid Bike that runs
@@ -521,9 +524,9 @@ export function Home() {
         <img
           src={kgvmitra}
           alt="KGV Mascot"
-          width={140}
-          height={140}
-          className="mt-6 md:mt-0"
+          width={280}
+          height={280}
+          className="mt-6 md:mt-0 mr-32  lg:scale-100 lg:hover:scale-125 transition-transform duration-500"
         />
       </section>
 
@@ -541,7 +544,7 @@ export function Home() {
         />
         <Link to={"/booking"}>
           <button className="relative bottom-40  bg-black font-semibold py-3 px-5 rounded text-white">
-            Buy Now
+            know more 
           </button>
         </Link>
       </div>
@@ -725,62 +728,39 @@ export function Home() {
         <hr className="w-2/4 mx-auto border-t-2 border-green-600 mb-6" />
 
         {/* Connector Line */}
-        <div className="relative flex justify-center items-start mx-auto max-w-6xl pt-10">
+        <div className="relative flex justify-center items-start mx-auto max-w-7xl px-4 md:px-10 pt-10 overflow-x-auto">
           {/* Horizontal Line */}
-          <div className="absolute top-5 left-0 right-0 h-0.5 bg-black z-0 mx-10"></div>
+          <div className="absolute top-6 left-0 right-0 h-0.5 bg-black z-0 ml-8 mr-8 sm:mx-20"></div>
 
           {/* Nodes */}
-          <div className="flex justify-between w-full px-10">
-            {/* Node 1 */}
-            <div className="flex flex-col items-center">
-              {/* Vertical line from horizontal */}
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap mt-1">
-                Warranty Provided
-              </div>
-            </div>
+          <div className="flex flex-wrap justify-between w-full  text-sm z-10 mt-[-14px]">
+            {/* Reusable Node Component */}
+            {[
+              "Warranty Provided",
+              "No tampering with engine, Gears or Clutch",
+              "Dual Fuel Technology",
+              "Reduce Air & Noise pollution",
+              "Charging as per convenience - Portable Battery",
+              "No range anxiety",
+            ].map((text, idx) => (
+              <div
+                key={idx}
+                className="flex flex-col items-center w-[160px] md:w-[180px]"
+              >
+                {/* Vertical line */}
+                <div className="w-0.5 h-6 bg-black"></div>
 
-            <div className="flex flex-col items-center">
-              {/* Vertical line from horizontal */}
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center mt-2 whitespace-nowrap">
-                  No tampering with engine,
-                  <br />
-                  Gears or Clutch
+                {/* Bubble */}
+                <div className="bg-green-600 text-white px-4 py-3 rounded-full font-normal text-center w-full h-[80px] flex items-center justify-center text-xs md:text-sm leading-tight">
+                  {text.split("\n").map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      <br />
+                    </span>
+                  ))}
                 </div>
-            </div>
-
-            {/* Node 2 */}
-            <div className="flex flex-col items-center">
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap mt-1">
-                Dual Fuel Technology
               </div>
-            </div>
-
-             <div className="flex flex-col items-center">
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center mt-2 whitespace-nowrap">
-                Reduce Air & Noise pollution
-              </div>
-            </div>
-
-            {/* Node 3 */}
-            <div className="flex flex-col items-center">
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap mt-1">
-                Charging as per convenience -<br />
-                Portable Battery
-              </div>
-            </div>
-
-            {/* Node 4 */}
-            <div className="flex flex-col items-center">
-              <div className="w-0.5 h-5 bg-black"></div>
-              <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap mt-1">
-                No range anxiety
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
