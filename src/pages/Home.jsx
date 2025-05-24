@@ -343,6 +343,9 @@ import { Link } from "react-router-dom";
 import backgroundView from "../resource/backgroundView.jpg";
 import group from "../resource/group.png";
 import backgroundBlob from "../resource/backgroundBlob.svg";
+import kgvmitra from "../resource/kgvmitra.png";
+import bike5 from '../resource/bike2.png';
+import heroImg from '../resource/Frame2.png'
 
 export function Home() {
   return (
@@ -506,7 +509,7 @@ export function Home() {
       </section>
 
       {/* Bottom Section */}
-      <section className="bg-green-700 text-white px-6 py-8 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
+      <section className="bg-green-700 text-white px-6 py-8 flex flex-col md:flex-row items-center justify-between max-full mx-auto">
         <p className="text-sm md:text-base max-w-3xl">
           Karishma Global Ventures LLP, we are revolutionizing the future of
           transportation. Our cutting-edge Smart E-Mobility Solution enables you
@@ -516,13 +519,209 @@ export function Home() {
           and eco-friendliness of electric power.
         </p>
         <img
-          src="/images/person-wave.png"
+          src={kgvmitra}
           alt="KGV Mascot"
           width={140}
           height={140}
           className="mt-6 md:mt-0"
         />
       </section>
+
+            <div className="w-screen h-full flex flex-col items-center justify-center">
+        <img
+        alt="heroimg"
+          src={heroImg}
+          className="w-screen h-screen  "
+          loading="lazy"
+        />
+        <img alt="bike5" src={bike5} className="absolute lg:hover:scale-110 lg:transition-all lg:duration-500 "/>
+        <Link to={"/booking"}>
+        <button className="relative bottom-40  bg-black font-semibold py-3 px-5 rounded text-white">Buy Now</button>
+        </Link>
+      </div>
+
+            <div className="bg-white rounded-xl shadow-2xl p-6 text-center max-w-4xl mx-auto my-8">
+        <h2 className="text-2xl font-bold text-green-600 mb-6">The Components of Our Kit</h2>
+        <div className="grid md:grid-cols-2 gap-6 text-left">
+<div className="rounded-lg p-4 shadow-md bg-gradient-to-br from-green-100 to-white border border-green-400">
+  <h3 className="text-xl font-semibold text-green-700 mb-2 text-center">KGV SMART MOTOR</h3>
+  <p className="text-gray-700 text-sm">
+    A KGV SMART MOTOR is an electric motor that is integrated into the hub of a vehicle’s wheel which directly drives the vehicle wheels. These vehicle hub motors are used in the application of E-mobility to drive trains in electric vehicles which can give the solution of an easy wheel drive system in the 2-wheeler or 4-wheel drive system.
+  </p>
+</div>
+<div className="rounded-lg p-4 shadow-md bg-gradient-to-br from-green-100 to-white border border-green-400">
+  <h3 className="text-xl font-semibold text-green-700 mb-2 text-center">KGV E-POWER HOUSE</h3>
+  <p className="text-gray-700 text-sm">
+   The KGV E-POWER HOUSE is used to control and manage the power output through the motor, digital meter, and other accessories in hybrid electric vehicles. The KGV E-POWER HOUSE is single-phase with a power range of 1-2.5KW, a voltage range of 36-72V with a current supply of 20-40A.
+  </p>
+</div>
+<div className="rounded-lg p-4 shadow-md bg-gradient-to-br from-green-100 to-white border border-green-400">
+  <h3 className="text-xl font-semibold text-green-700 mb-2 text-center">DUEL FUEL THROTTLE</h3>
+  <p className="text-gray-700 text-sm">
+   The DUEL FUEL THROTTLE is based on a Hall effect magnetic sensor for long operational life for the throttle speed controlled by the switches as Low-Medium-High and also for Forwa rd/Reverse direction.
+  </p>
+</div>
+<div className="rounded-lg p-4 shadow-md bg-gradient-to-br from-green-100 to-white border border-green-400">
+  <h3 className="text-xl font-semibold text-green-700 mb-2 text-center">DC/DC CONVERTER</h3>
+  <p className="text-gray-700 text-sm">
+   A DC/DC converter is an electromechanical device that converts the direct current source from one level to another level that's high to low or vice versa. These DC/DC converters are used in high to low conversion in this application for 72/60/48V to 12 Volts.
+  </p>
+</div>
+<div className="rounded-lg p-4 shadow-md bg-gradient-to-br from-green-100 to-white border border-green-400">
+  <h3 className="text-xl font-semibold text-green-700 mb-2 text-center">HARNESS</h3>
+  <p className="text-gray-700 text-sm">
+  Wire and accessories contain the wiring, male and female connectors, and battery box with other accessories to require the battery box fixing.
+  </p>
+</div>
+
+
+        </div>
+      </div>
+
+      <div className="bg-white py-10 px-4 sm:px-6 lg:px-8">
+  {/* Top Box */}
+  <div className="bg-white rounded-xl shadow-md p-6 max-w-4xl mx-auto text-center">
+    <h2 className="text-lg font-semibold text-green-700">
+      Green Drive KGV E-Hybrid Bike <span className="text-orange-600">@14 Paise Per KM</span>
+    </h2>
+    <p className="text-sm text-gray-600 mt-1 mb-4">
+      Our CEO and MD are the driving force behind our innovation and success, leading with expertise and a commitment to excellence.
+    </p>
+    <div className="flex flex-col md:flex-row justify-between items-center m-4 ">
+      {/* Left */}
+      <div className="flex items-center text-green-600 text-sm font-medium">
+    <p className="text-6xl font-bold rotate-[-90deg] origin-left mt-32 ">0%</p>
+        <div className="text-xl">
+    <p >Air Pollution</p>
+    <p>Noise Pollution</p>
+    <p>Range Anxiety</p>
+    <p>Dependability on Petrol</p>
+    <p>Carbon Emission</p>
+  </div>
+      </div>
+
+      {/* Right */}
+<div className="flex items-center text-orange-600 text-sm font-medium ">
+  <p className="text-6xl font-bold rotate-[-90deg] origin-left mt-32 ">100%</p>
+  <div className="text-xl">
+    <p >Gearless Automatic Drive</p>
+    <p>Powered By Dual Fuel tech</p>
+    <p>Portable Charging batteries</p>
+    <p>Fulfills 8 goals of SDG</p>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  
+
+  {/* Section Title */}
+  <h3 className="text-center text-xl font-bold text-green-800 mt-12 mb-6">
+    What makes <span className="text-green-600">KGV</span> Better than the rest?
+  </h3>
+
+
+
+  <div className="flex flex-wrap justify-center gap-12 max-w-6xl mx-auto relative pt-10">
+
+  {/* Connecting Horizontal Line */}
+  <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[80%] h-0.5 bg-green-600 z-0"></div>
+
+  {/* Each Node */}
+  <div className="flex flex-col items-center relative z-10">
+    <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold whitespace-nowrap">
+      Warranty Provided
+    </div>
+    <p className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold mt-2 text-center whitespace-nowrap">
+      No tampering with engine,<br />Gears or Clutch
+    </p>
+    {/* Vertical Line */}
+    <div className="w-0.5 h-10 bg-green-600 mt-2"></div>
+  </div>
+  <div className="flex flex-col items-center relative z-10">
+    <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold whitespace-nowrap">
+   Dual Fuel Technology
+    </div>
+    <p className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold mt-2 text-center whitespace-nowrap">
+     Reduce Air & Noise pollution
+    </p>
+    {/* Vertical Line */}
+    <div className="w-0.5 h-10 bg-green-600 mt-2"></div>
+  </div>
+
+
+
+  <div className="flex flex-col items-center relative z-10">
+    <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap">
+      Charging as per convenience -<br />Portable Battery
+    </div>
+    <div className="w-0.5 h-10 bg-green-600 mt-2"></div>
+  </div>
+
+  <div className="flex flex-col items-center relative z-10">
+    <div className="bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-center whitespace-nowrap">
+      No tampering with engine,<br />Gears or Clutch
+    </div>
+    <div className="w-0.5 h-10 bg-green-600 mt-2"></div>
+  </div>
+</div>
+
+</div>
+
+
+
+<div className="bg-gradient-to-r from-purple-800 via-pink-600 to-yellow-400 py-12 px-4 sm:px-6 lg:px-8">
+  <div className=" text-white rounded-xl p-10 max-w-7xl mx-auto ">
+    {/* Title and Description */}
+    <h2 className="text-3xl font-bold text-center text-yellow-400 mb-4">SDG Goals</h2>
+    <p className="text-center text-sm md:text-base max-w-3xl mx-auto mb-10">
+      At Karishma Global Ventures, we are committed to achieving several Sustainable Development Goals (SDGs) set by the United Nations.
+      Our primary focus areas include providing affordable and sustainable mobility solutions, reducing carbon emissions, promoting
+      renewable energy usage, and contributing to economic growth and social equity. Through innovation and collaboration, we aim to make
+      a positive impact on the environment and society, creating a better and more sustainable future for all.
+    </p>
+
+    {/* SDG Cards Grid */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-center">
+      {/* Each Card */}
+      <div className="bg-green-600 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">3</div>
+        GOOD HEALTH <br /> AND WELL-BEING
+      </div>
+      <div className="bg-yellow-400 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">7</div>
+        AFFORDABLE AND <br /> CLEAN ENERGY
+      </div>
+      <div className="bg-orange-500 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">9</div>
+        INDUSTRY, INNOVATION <br /> AND INFRASTRUCTURE
+      </div>
+      <div className="bg-orange-400 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">11</div>
+        SUSTAINABLE CITIES <br /> AND COMMUNITIES
+      </div>
+      <div className="bg-yellow-600 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">12</div>
+        RESPONSIBLE <br /> CONSUMPTION <br /> AND PRODUCTION
+      </div>
+      <div className="bg-green-700 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">13</div>
+        CLIMATE <br /> ACTION
+      </div>
+      <div className="bg-green-600 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">15</div>
+        LIFE <br /> ON LAND
+      </div>
+      <div className="bg-blue-800 p-4 rounded text-white text-center font-bold text-sm">
+        <div className="text-2xl mb-2">17</div>
+        PARTNERSHIPS <br /> FOR THE GOALS
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </main>
   );
 }
