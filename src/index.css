@@ -1,22 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-.prop{
-    letter-spacing: 4rem;
-
-
+.prop {
+  letter-spacing: 4rem;
 }
-.text_properties{
-    text-shadow: 0 0.5em rgb(85 227 34 / 33%), 0 0.8em rgb(85 227 34 / 16%), 0 2.3em rgb(85,227,34,0.1), 0 -0.5em rgb(85 227 34 / 30%), 0 -0.8em rgb(85 227 34 / 16%);
+.text_properties {
+  text-shadow: 0 0.5em rgb(85 227 34 / 33%), 0 0.8em rgb(85 227 34 / 16%),
+    0 2.3em rgb(85, 227, 34, 0.1), 0 -0.5em rgb(85 227 34 / 50%),
+    0 -0.8em rgb(85 227 34 / 16%);
 }
 
-.wrapper{
-    perspective: 10px;
-    overflow-x: hidden;
+.wrapper {
+  perspective: 10px;
+  overflow-x: hidden;
+}
 
+@keyframes swapPositions {
+  0%,
+  10% {
+    left: -4%; /* Bike A on left, Bike B on center */
+    transform: translateY(-10%) scale(0.8);
+    opacity: 0.4;
+  }
+  50%,
+  60% {
+    left: 40%; /* Bike A to center, Bike B to left */
+    transform: translateY(0%) scale(1);
+    opacity: 1.2;
+  }
+  90%,
+  100% {
+    left: -4%; /* Bike A on left, Bike B on center */
+    transform: translateY(-10%) scale(0.8);
+    opacity: 0.4;
+  }
+}
+
+@keyframes swapPositionsReverse {
+  0%,
+  10% {
+    left: 35%; /* Bike B on center */
+    transform: translateY(0%) scale(1);
+    opacity: 1.2;
+  }
+  50%,
+  60% {
+    left: -10%; /* Bike B to left */
+    transform: translateY(-10%) scale(0.8);
+    opacity: 0.4;
+  }
+  90%,
+  100% {
+    left: 35%; /* Bike B on center */
+    transform: translateY(0%) scale(1);
+    opacity: 1.2;
+  }
+}
+
+.bike-swap {
+  animation: swapPositions 3s ease-in-out infinite;
+  position: absolute;
+  bottom: 10%;
+  width: 40%;
+}
+
+.bike-swap-reverse {
+  animation: swapPositionsReverse 3s ease-in-out infinite;
+  position: absolute;
+  bottom: 10%;
+  width: 50%;
 }
