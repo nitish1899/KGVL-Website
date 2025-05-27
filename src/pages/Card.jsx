@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Image, Text, VStack } from '@chakra-ui/react';
+import { Button, Text, VStack } from '@chakra-ui/react';
 
 const Card = ({ amount, img, checkoutHandler }) => {
   return (

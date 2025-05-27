@@ -8,33 +8,37 @@ import Vector from "../resource/Vector.png";
 import YamhaBike1 from "../resource/YamhaBike1.png";
 import AvgBike1 from "../resource/AvgBike1.png";
 import EnergyFrame from "../resource/EnergyFrame.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export function Home() {
   return (
     <main className="w-full min-h-screen bg-white font-sans">
-      <section className="relative w-full px-4 py-12 md:py-20 bg-white flex flex-col items-center justify-center text-center overflow-hidden">
+      <section className="relative w-full min-h-[60vh] py-12 md:py-20 bg-white flex flex-col items-center justify-center text-center overflow-hidden">
         <div
-          className="absolute inset-0 bg-cover bg-center z-0"
+          className="absolute inset-0 bg-cover bg-center z-0 bg-no-repeat bg-red-500"
           style={{
             backgroundImage: `url(${backgroundView})`,
-            opacity: 0.4,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
+            opacity: 0.3
           }}
-          maxHeight="80%"
+          maxHeight="60%"
         ></div>
 
-        <h1 className="relative font-playfair text-green-900 font-bold text-xl md:text-3xl lg:text-4xl uppercase tracking-wide z-10">
+        <h1 className="relative font-playfair text-green-900 font-bold text-5xl md:text-3xl lg:text-4xl uppercase tracking-wide z-10">
           World's First Smart E-Mobility Solution
         </h1>
 
-        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mt-8 md:mt-16 px-4">
-          <div className="relative p-6 md:p-10 rounded-3xl w-full md:w-1/2 text-white shadow-lg z-10 flex flex-col justify-center">
+        <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mt-8 md:mt-16 px-4 ml-[-80px]">
+          <div className="relative p-6 md:p-10 rounded-3xl w-full md:w-1/2 text-white z-10 flex flex-col justify-center">
             <img
               src={group}
               alt="Background Blob"
-              className="absolute top-0 left-0 w-full h-full object-contain z-[-1] min-h-[400px]"
+              className="absolute top-0 left-0 w-full h-full object-contain z-[-1] min-h-[500px]"
             />
 
             <div className="text-left pl-24">
@@ -87,43 +91,48 @@ export function Home() {
           </div>
         </div>
 
-        <div className="mt-10 md:mt-16">
-          <button
-            onClick={() => alert("Button clicked!")}
-            className="hidden md:flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 active:scale-95 transition-all duration-200 text-white font-semibold px-4 py-2 rounded-xl min-w-[140px] h-[44px] text-base"
-            style={{ flexShrink: 0 }}
-          >
-            <span className="whitespace-nowrap">Book Now</span>
-            <img
-              src="/images/vector-icon.png"
-              alt="Arrow"
-              width={16}
-              height={16}
-            />
-          </button>
-        </div>
-
-        <div className="mt-10 flex gap-4">
-          <Link href="#">
-            <img
-              src="/images/instagram.svg"
-              alt="Instagram"
-              className="h-6 w-6"
-            />
-          </Link>
-          <Link href="#">
-            <img src="/images/twitter.svg" alt="Twitter" className="h-6 w-6" />
-          </Link>
-          <Link href="#">
-            <img
-              src="/images/linkedin.svg"
-              alt="LinkedIn"
-              className="h-6 w-6"
-            />
-          </Link>
-          <Link href="#">
-            <img src="/images/medium.svg" alt="Medium" className="h-6 w-6" />
-          </Link>
+        <div className="w-full flex justify-end pr-8 z-10">
+          {" "}
+          {/* full-width container with right padding */}
+          <div className="flex gap-6 mt-4">
+            <a
+              href="https://www.instagram.com/kgvllp?igsh=MWZwbnZxbG4xZnZz"
+              className="text-green-700 text-3xl p-2 rounded-full hover:bg-green-100 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FontAwesomeIcon icon={faInstagram} />
+            </a>
+            <a
+              href="https://x.com/KGVllp?t=ecvFy4j65dHiRpRzpOWGtg&s=09"
+              className="text-green-700 text-3xl p-2 rounded-full hover:bg-green-100 transition"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/karishmaglobal/"
+              className="text-green-700 text-3xl p-2 rounded-full hover:bg-green-100 transition"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedinIn} />
+            </a>
+            <a
+              href="mailto:team@kgvl.co.in"
+              className="text-green-700 text-3xl p-2 rounded-full hover:bg-green-100 transition-colors duration-200 inline-flex items-center justify-center"
+              aria-label="Email"
+              title="Email us"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+          </div>
         </div>
       </section>
 
@@ -136,7 +145,7 @@ export function Home() {
           backgroundPosition: "center 80%",
         }}
       >
-        <p className="text-lg md:text-base max-w-3xl ml-16 ">
+        <p className="text-xl md:text-lg max-w-4xl ml-24 ">
           Karishma Global Ventures LLP, we are revolutionizing the future of
           transportation. Our cutting-edge Smart E-Mobility Solution enables you
           to convert your conventional petrol bike into a hybrid Bike that runs
@@ -152,10 +161,10 @@ export function Home() {
           className="mt-6 md:mt-0 mr-32  lg:scale-100"
         />
       </section>
-<div className="w-screen bg-white rounded-xl shadow-2xl">
-<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-playfair text-green-950 text-center my-6">
-  Our <span className="text-green-600">Products.</span>
-</h2>
+      <div className="w-screen bg-white rounded-xl shadow-2xl">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold font-playfair text-green-950 text-center my-6">
+          Our <span className="text-green-600">Products.</span>
+        </h2>
 
         <div
           className="relative w-screen h-[90vh] flex flex-col items-center justify-center bg-[#F2E6DA]"
@@ -167,8 +176,8 @@ export function Home() {
           }}
         >
           <Link to={"/booking"}>
-  <button
-    className="
+            <button
+              className="
       absolute  top-5 sm:top-8 md:top-16 lg:top-20  left-1/2 transform -translate-x-1/2 
       flex items-center justify-center 
       gap-2 
@@ -181,11 +190,11 @@ export function Home() {
       rounded-xl 
       mt-6
     "
-  >
-    <span className="whitespace-nowrap">Know More</span>
-    <img src={Vector} alt="Vector" className="h-[16px] w-[16px]" />
-  </button>
-</Link>
+            >
+              <span className="whitespace-nowrap">Know More</span>
+              <img src={Vector} alt="Vector" className="h-[16px] w-[16px]" />
+            </button>
+          </Link>
 
           {/* Bikes with swap animation */}
           <img

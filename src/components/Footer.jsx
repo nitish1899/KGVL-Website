@@ -5,20 +5,23 @@ import footerbgpic from "../resource/footerbgpic.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
-  faYoutube,
-  faWhatsapp,
+  faTwitter,
+  faLinkedinIn,
   faFacebook,
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export const Footer = () => {
   return (
-<footer
-  className="relative text-gray-800 px-6 py-10 w-full overflow-hidden w-screen"
->
-  <div
-    className="absolute inset-0 bg-black opacity-30"
-    style={{ backgroundImage: `url(${footerbgpic})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-  ></div>
+    <footer className="relative text-gray-800 px-6 py-10 overflow-hidden w-screen">
+      <div
+        className="absolute inset-0 bg-black opacity-30"
+        style={{
+          backgroundImage: `url(${footerbgpic})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      ></div>
       {/* Right-side mascot image */}
       <img
         src={kgvmitr}
@@ -42,119 +45,99 @@ export const Footer = () => {
         </div>
 
         {/* Column 2: Home */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left text-green-700">
           <h4 className="font-semibold mb-2">Home</h4>
-          <a href="#" className="block text-xs hover:underline">Book Now</a>
+          <a href="#" className="block text-xs hover:underline">
+            Book Now
+          </a>
         </div>
 
         {/* Column 3: Products */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left text-green-700">
           <h4 className="font-semibold mb-2">Products</h4>
-          <a href="#" className="block text-xs hover:underline">Featured Products</a>
-          <a href="#" className="block text-xs hover:underline">New Stories</a>
+          <a href="#" className="block text-xs hover:underline">
+            Featured Products
+          </a>
+          <a href="#" className="block text-xs hover:underline">
+            New Stories
+          </a>
         </div>
 
         {/* Column 4: Company */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left text-green-700">
           <h4 className="font-semibold mb-2">Company</h4>
-          <a href="#" className="block text-xs hover:underline">About Us</a>
-          <a href="#" className="block text-xs hover:underline">Contact Us</a>
+          <a href="#" className="block text-xs hover:underline">
+            About Us
+          </a>
+          <a href="#" className="block text-xs hover:underline">
+            Contact Us
+          </a>
         </div>
 
         {/* Column 5: Contact */}
-        <div className="text-center md:text-left color:'#00433D'">
-          <h4 className="font-semibold mb-2">Get In Touch</h4>
-          <p className="text-xs">📧 teamtsil.net.in</p>
-          <p className="text-xs">📧 siddharthtsil.net.in</p>
-          <p className="text-xs">📞 +91-9661829944</p>
+        <div className="text-center md:text-left color:'#00433D' text-black">
+          <h4 className="font-bold mb-2">Get In Touch</h4>
+          <p className="text-xs">📧 <span className="font-bold">Email: </span> team@kgvl.co.in</p>
+          <p className="text-xs">📧 <span className="font-bold">Email: </span> sid@kgvl.co.in</p>
+          <p className="text-xs">📞 <span className="font-bold">Phone: </span> +91-96618 29944</p>
 
-<div className="flex justify-center md:justify-start gap-4 mt-2 text-lg">
-  <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-  <a href="#"><FontAwesomeIcon icon={faYoutube} /></a>
-  <a href="#"><FontAwesomeIcon icon={faWhatsapp} /></a>
-  <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-</div>
+          <div className="flex justify-center md:justify-start text-lg">
+            <div className="flex ">
+              <a
+                href="https://www.facebook.com/share/1EFtxnRMuL/"
+                className="text-black text-lg p-2 pl-0 rounded-full hover:bg-green-100 transition"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+
+              <a
+                href="https://www.instagram.com/kgvllp?igsh=MWZwbnZxbG4xZnZz"
+                className="text-black text-lg p-2 rounded-full hover:bg-green-100 transition"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a
+                href="https://x.com/KGVllp?t=ecvFy4j65dHiRpRzpOWGtg&s=09"
+                className="text-black text-lg p-2 rounded-full hover:bg-green-100 transition"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <FontAwesomeIcon icon={faTwitter} />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/karishmaglobal/"
+                className="text-black text-lg p-2 rounded-full hover:bg-green-100 transition"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedinIn} />
+              </a>
+              <a
+                href="mailto:team@kgvl.co.in"
+                className="text-black text-lg p-2 rounded-full hover:bg-green-100 transition-colors duration-200 inline-flex items-center justify-center"
+                aria-label="Email"
+                title="Email us"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      <p className="mt-8 text-center text-xs text-gray-600 relative z-10">
+      <p className="mt-8 text-center text-base font-normal text-green-600 relative z-10">
         Copyright © 2025 KARISHMA GLOBAL VENTURES
       </p>
     </footer>
   );
 };
-
-
-
-
-
-// import React from 'react';
-// import { Book } from './Book';
-// import { Button2 } from './Button2';
-// import logo from "../resource/logokgv.jpg";
-// import { Link } from 'react-router-dom';
-
-// export const Footer = () => {
-//   // Get the current year dynamically
-//   const year = new Date().getFullYear();
-
-//   return (
-//     <div className='w-screen bg-black pl-20 pr-8 pt-16 pb-16'>
-//       <div className='w-11/12 max-w-[1240px] flex min-[320px]:flex-col sm:flex-row items-center justify-between gap-5'>
-//         {/* Logo Section */}
-//         <div className='min-[320px]:w-full sm:w-1/3 flex items-center justify-center mb-5'>
-//           <Link to={"/"}>
-//             <img src={logo} className='w-[60px] h-[60px]' alt="Company Logo" />
-//           </Link>
-//         </div>
-
-//         {/* Footer Links */}
-//         <div className='w-2/3 flex justify-center sm:items-center min-[320px]:flex-col sm:flex-row gap-5 min-[320px]:mb-5 sm:mb-2'>
-//           <div className='flex justify-center sm:items-center gap-10 h-28 mr-5'>
-//             {/* Column 1 */}
-//             <div className='text-white'>
-//               <div className='font-semibold'>Home</div>
-//               <Link to="/booking"><div>Book Now</div></Link>
-//               <Link to="/contactUs">Get In Touch</Link>
-//             </div>
-
-//             {/* Column 2 */}
-//             <div className='text-white'>
-//               <div className='font-semibold'>Product</div>
-//               <Link to={"/product"}><div>Featured Product</div></Link>
-//               <Link to={"https://hindi.news18.com/news/auto/petrol-bike-will-also-become-electric-2-brothers-have-invented-a-kit-7880156.html?1701845158"}>News Stories</Link>
-//             </div>
-
-//             {/* Column 3 */}
-//             <div className='text-white'>
-//               <div className='font-semibold'>Company</div>
-//               <Link to={"/"}>About Us</Link>
-//               <div>Careers</div>
-//             </div>
-
-//             {/* Column 4: Terms and Conditions */}
-//             <div className='text-white'>
-//               <div className='font-semibold'>Legal</div>
-//               <Link to="/Termsandconditions"><div>Terms and Conditions</div></Link>
-//               <Link to="/Privacypolicy"><div>Privacy Policy</div></Link>
-//             </div>
-//           </div>
-
-//           {/* Button Section */}
-//           <div className='flex min-[320px]:flex-row sm:flex-col items-center justify-center gap-10'>
-//             <Button2 />
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Footer Divider */}
-//       <div className='w-full rounded-md bg-[#57E226] h-[1px] mb-5'></div>
-
-//       {/* Copyright Section */}
-//       <div className='text-white text-center'>
-//         <h3>Copyright © {year} KARISHMA GLOBAL VENTURES</h3>
-//       </div>
-//     </div>
-//   );
-// };
-

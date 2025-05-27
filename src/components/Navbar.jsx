@@ -5,15 +5,7 @@ import { IoReorderThreeOutline } from "react-icons/io5";
 import { Book } from "./Book";
 import { Button2 } from "./Button2";
 import Vector from "../resource/Vector.png";
-import {
-  // FaFacebookF,
-  // FaTwitter,
-  // FaInstagram,
-  // FaLinkedinIn,
-  // FaMapMarkerAlt,
-  // FaPhoneAlt,
-  FaChevronDown,
-} from "react-icons/fa";
+import {FaChevronDown} from "react-icons/fa";
 
 export const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -154,16 +146,9 @@ export const Navbar = () => {
           </Link>
 
           <div className="relative w-full text-center">
-            {/* <button
-              onClick={() =>
-                setMobileBookingDropdownOpen(!isMobileBookingDropdownOpen)
-              }
-              className="py-2 w-full flex items-center justify-center hover:border-b-2 hover:border-[#ecf662] transition duration-200"
-            >
-              Booking <FaChevronDown className="ml-1" />
-            </button> */}
             <button
-              onClick={() => alert("Button clicked!")}
+              onClick={() =>
+                setMobileBookingDropdownOpen(!isMobileBookingDropdownOpen)}
               className="hidden md:flex items-center justify-center gap-2 bg-green-600 hover:bg-green-700 active:scale-95 transition-all duration-200 text-white text-base font-semibold px-4 py-2 rounded-xl min-w-[140px] h-[44px]"
             >
               <span className="whitespace-nowrap">Book Now</span>
