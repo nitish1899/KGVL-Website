@@ -11,7 +11,7 @@ import { FaUser } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios"
-import kgvHero from '../resource/kgvhero.png';
+import kgvHero from '../resource/kgvhero1.png';
 import socialBg from '../resource/socialBg.png';
 
  export const ContactUs=()=> {

@@ -112,7 +112,7 @@ export const AboutUs = () => {
             <h3 className="text-green-700 font-semibold">Mr. Purushottam P Singhal</h3>
             <p className="text-xs text-gray-700 font-semibold mb-1">Chief Executive Officer</p>
             <p className="text-sm text-gray-600">
-              Mr. Singhal, with a Bcom, Mcom, and MBA (Logistics), leads the company as CEO. He has worked in Amazon, Flipkart, and Meesho as a trusted asset across 6+ years in logistics. Let us know your case and we'll resolve it.
+The CEO, qualified with B.Com (Hons) and an MBA in Logistics, has been leading the organisation since 1990. Inspired by the experience of his father, Late Shri P.C. Singhal, he has achieved key milestones and completed major PAN India projects. A respected social activist and Trustee of Sri Agarsen International Hospital, he is also an expert in handling critical and supercritical jobs.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ export const AboutUs = () => {
             <h3 className="text-green-700 font-semibold">Dr. Uttam Singhal</h3>
             <p className="text-xs text-gray-700 font-semibold mb-1">Managing Director</p>
             <p className="text-sm text-gray-600">
-              Dr. Singhal, our Managing Director, holds a B.Com, an MBA in Finance, and a Doctorate. His leadership inspires the organization. His strategic vision has strengthened our presence across India.
+             The Managing Director, B.Com (H) and MBA (Finance), has been leading the organisation since 2004 with strong experience and a modern outlook. He has achieved several landmark milestones, built a wide vendor network across India, and is known for his vision, enthusiasm, and commitment to delivering on every promise.
             </p>
           </div>
 

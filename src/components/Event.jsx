@@ -1,6 +1,6 @@
 import React from "react";
 import wave from "../resource/wave_final.png";
-import socialBg from "../resource/socialBg.png"; // replace with your social image path
+import socialBg from "../resource/socialBg1.png"; // replace with your social image path
 import event1 from "../resource/event1.jpg"; 
 import event2 from "../resource/event2.jpg"; 
 import event3 from "../resource/event3.jpg"; 

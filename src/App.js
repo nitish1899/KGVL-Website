@@ -16,6 +16,8 @@ import { TermsAndConditions } from "./components/TermsAndConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { RentKGVBike } from "./pages/RentKGVBike";
 import { Purchagekgvbike } from "./pages/Purchagekgvbike";
+import PayOneRupee from "./pages/PayOneRupee";
+import KgvbikeOrder from "./pages/KgvbikeOrder";
 
 
 const App = () => {
@@ -35,6 +37,8 @@ const App = () => {
         <Route path="/paymentsuccess" element={< PaymentSuccess />} />
         <Route path="/distribution" element={<  Distrubuter />} />
         <Route path="/socialmedia" element={<  SocialMedia />} />
+        <Route path="/KgvkitOrder" element={<  PayOneRupee />} />
+        <Route path="/KgvbikeOrder" element={<  KgvbikeOrder />} />
         <Route path="/MissionVision" element={<  MissionVision />} />
         <Route path="/Termsandconditions" element={<  TermsAndConditions />} />
         <Route path="/Privacypolicy" element={<  PrivacyPolicy />} />

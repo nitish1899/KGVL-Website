@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.92bc4fd5.css",
-    "main.js": "/static/js/main.dd65d2b2.js",
+    "main.css": "/static/css/main.d680e72b.css",
+    "main.js": "/static/js/main.c1d1b334.js",
     "static/js/787.219025fc.chunk.js": "/static/js/787.219025fc.chunk.js",
     "static/media/YamhaBike1.png": "/static/media/YamhaBike1.8c630adae8658aa5de6e.png",
-    "static/media/kgvmitr.png": "/static/media/kgvmitr.0e7aef973f154dc96e5c.png",
+    "static/media/kgvmitr1.png": "/static/media/kgvmitr1.861392fd196fa80f0b20.png",
     "static/media/Tvs.jpg": "/static/media/Tvs.6df1aca9842c7202b2ee.jpg",
     "static/media/AvgBike1.png": "/static/media/AvgBike1.da7585b643701d08833f.png",
     "static/media/backgroundView.jpg": "/static/media/backgroundView.cbac7a3ffc2b7d51e9cf.jpg",
+    "static/media/socialBg1.png": "/static/media/socialBg1.ef188a9195599c858795.png",
+    "static/media/kgvhero1.png": "/static/media/kgvhero1.1b5b14a72344af730627.png",
     "static/media/socialBg.png": "/static/media/socialBg.988cd54b29f37b50bac9.png",
-    "static/media/kgvhero.png": "/static/media/kgvhero.c5d3301dd60bad417bcd.png",
     "static/media/uttam.png": "/static/media/uttam.be1051501db2d72af675.png",
     "static/media/crausal8.jpg": "/static/media/crausal8.45f124307268b9554916.jpg",
     "static/media/wave_final.png": "/static/media/wave_final.fc78140eae77548db657.png",
-    "static/media/kgvl.png": "/static/media/kgvl.b5314ab6fe7aa1074b00.png",
     "static/media/crausal7.jpg": "/static/media/crausal7.bbfdaa4e3012968b7a70.jpg",
     "static/media/pusparaj.png": "/static/media/pusparaj.5e48d622bb0a78545c95.png",
     "static/media/india.png": "/static/media/india.9314ebec77ff9b900419.png",
@@ -36,20 +36,20 @@
     "static/media/productc.png": "/static/media/productc.333ed01bc0da10d84b84.png",
     "static/media/crausal5.jpg": "/static/media/crausal5.accb68022f0eef642767.jpg",
     "static/media/bike4.jpg": "/static/media/bike4.dde5e175a2ef50a65d9b.jpg",
+    "static/media/kgvmitra1.png": "/static/media/kgvmitra1.3884c6af54b008534dd6.png",
     "static/media/victor.jpg": "/static/media/victor.2d741b4fcb336913d1dc.jpg",
-    "static/media/kgvmitra.png": "/static/media/kgvmitra.5c8b6789e959c7eaeda8.png",
+    "static/media/kgvl1.png": "/static/media/kgvl1.7a637a232435a05998ac.png",
     "static/media/EnergyFrame.png": "/static/media/EnergyFrame.3287a4bce490a0deda83.png",
     "static/media/Frame2.png": "/static/media/Frame2.271afbb647698d560791.png",
-    "static/media/logokgv.jpg": "/static/media/logokgv.cb6e50d56b55ae361cd7.jpg",
     "static/media/group.png": "/static/media/group.a1af00e96cd0653c3aef.png",
     "static/media/mountain.png": "/static/media/mountain.bd5d3638c6d3cf7e2d15.png",
     "index.html": "/index.html",
-    "main.92bc4fd5.css.map": "/static/css/main.92bc4fd5.css.map",
-    "main.dd65d2b2.js.map": "/static/js/main.dd65d2b2.js.map",
+    "main.d680e72b.css.map": "/static/css/main.d680e72b.css.map",
+    "main.c1d1b334.js.map": "/static/js/main.c1d1b334.js.map",
     "787.219025fc.chunk.js.map": "/static/js/787.219025fc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.92bc4fd5.css",
-    "static/js/main.dd65d2b2.js"
+    "static/css/main.d680e72b.css",
+    "static/js/main.c1d1b334.js"
   ]
 }

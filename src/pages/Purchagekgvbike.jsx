@@ -1,9 +1,7 @@
 
-
-
 import React, { useState } from "react";
 import socialBg from '../resource/socialBg.png';
-import kgvHero from '../resource/kgvhero.png';
+import kgvHero from '../resource/kgvhero1.png';
 export const Purchagekgvbike = () => {
 
   const [engine, setEngine] = useState('100cc');

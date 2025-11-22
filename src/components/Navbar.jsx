@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import logo from "../resource/kgvl.png";
+import logo from "../resource/kgvl1.png";
 import { IoReorderThreeOutline } from "react-icons/io5";
 import { Book } from "./Book";
 import { Button2 } from "./Button2";
@@ -49,14 +49,14 @@ export const Navbar = () => {
             {isBookingDropdownOpen && (
               <div className="absolute left-0 mt-2 bg-white text-green-700 rounded-md overflow-hidden shadow-lg z-50 w-52">
                 <Link
-                  to="/Purchagekgvbike"
+                  to="/KgvbikeOrder"
                   onClick={() => setBookingDropdownOpen(false)}
                   className="block px-4 py-2 hover:bg-gray-200 transition duration-200"
                 >
                   🏍️ Buy KGV BIKE
                 </Link>
                 <Link
-                  to="/booking"
+                  to="/KgvkitOrder"
                   onClick={() => setBookingDropdownOpen(false)}
                   className="block px-4 py-2 hover:bg-gray-200 transition duration-200"
                 >

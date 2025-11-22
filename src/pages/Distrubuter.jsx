@@ -2,7 +2,7 @@
 import React from 'react';
 import wave from '../resource/wave_final.png';
 import socialBg from '../resource/socialBg.png';
-import kgvHero from '../resource/kgvhero.png';
+import kgvHero from '../resource/kgvhero1.png';
 import indiaMap from '../resource/india.png';
 
 const Distrubuter = () => {
